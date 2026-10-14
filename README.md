@@ -1,50 +1,57 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/header.png" width="100%" alt="Jackson — Python automation, React applications and end-to-end delivery" />
-</p>
+<img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/dataflow.svg" width="100%" alt="Jackson — Python automation and React applications. Animated source-to-delivery workflow." />
 
-<p align="center">
-  <a href="#selected-work">Selected work</a> &nbsp; · &nbsp;
-  <a href="#working-together">Working together</a> &nbsp; · &nbsp;
-  <a href="https://github.com/zc627788/zc627788/blob/main/README.zh-CN.md">中文介绍</a>
-</p>
+<p align="center"><a href="#selected-work">Selected work</a> &nbsp; / &nbsp; <a href="#working-together">Work with me</a> &nbsp; / &nbsp; <a href="README.zh-CN.md">中文</a></p>
 
-### Hi, I'm Jackson.
+I’m **Jackson**. I build Python collectors and automation tools, then connect the results to React applications. My work spans web protocol analysis, document processing, customer-information workflows and business dashboards. I can take a scoped web project from its first screen through APIs, database and deployment.
 
-I build Python tools for collecting and organizing data, and React applications that make it useful. My work includes customer-information and notification workflows, web protocol analysis, document collection, and business dashboards.
-
-I like projects with a clear, practical finish: a clean export, a working integration, or a page someone can actually use. I can take a scoped web project through the frontend, API, database and deployment.
-
-**Python · React · TypeScript · Next.js · FastAPI · SQL · Browser automation**
+**Python** &nbsp; / &nbsp; **React** &nbsp; / &nbsp; TypeScript &nbsp; / &nbsp; Next.js &nbsp; / &nbsp; FastAPI &nbsp; / &nbsp; SQL
 
 ## Selected work
 
-<a href="https://github.com/zc627788/caipanbook_Crawler"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/wenshu.png" width="100%" alt="Court document collection: 7,296 unique IDs in verified existing output, exported to 12-column CSV" /></a>
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/zc627788/caipanbook_Crawler"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/court-card.svg" width="100%" alt="Court documents — 7,296 unique IDs in verified existing output" /></a>
+<p>Request/response analysis, date-and-court task partitioning, saved checkpoints and CSV export. Rerunning the exporter recovered <strong>955 records</strong> missing from the older CSV.</p>
+<p><sub>Local audit of saved output; no new live crawl was verified.</sub></p>
+<a href="https://github.com/zc627788/caipanbook_Crawler">Code &amp; walkthrough ↗</a> · <a href="https://github.com/zc627788/caipanbook_Crawler/blob/main/docs/portfolio/project-evidence/redacted-preview.csv">Redacted sample</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/zc627788/bond_and_money_scrapy"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/reports-card.svg" width="100%" alt="Rating reports — 15 downloaded PDFs, 10 unique files, 182 pages" /></a>
+<p>Search by issuer, download reports, flag duplicate files and deliver an Excel inventory with source links. File hashes make the results easy to check.</p>
+<p><sub>Live ChinaBond sample: one issuer, first listing page.</sub></p>
+<a href="https://github.com/zc627788/bond_and_money_scrapy">Code &amp; walkthrough ↗</a> · <a href="https://github.com/zc627788/bond_and_money_scrapy/blob/main/docs/portfolio/live-evidence/manifest.csv">Manifest</a>
+</td>
+</tr>
+</table>
 
-**[Court document collection →](https://github.com/zc627788/caipanbook_Crawler)**<br>
-Request/response analysis, date-and-court task partitioning, checkpoints and CSV export. The existing output contains **7,296 distinct document IDs**. Rerunning the exporter recovered **955 records missing from the older CSV**. This was a local check of saved data, not a new live crawl.
+<details>
+<summary><strong>View the collection results — real output, with sensitive fields removed</strong></summary>
+<p>These are audit reports made from actual project outputs. Open either image for the full-size evidence.</p>
+<table><tr><td width="50%"><a href="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/court-evidence.png"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/court-evidence.png" width="100%" alt="Court-document output audit and redacted sample" /></a></td><td width="50%"><a href="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/reports-evidence.png"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/reports-evidence.png" width="100%" alt="Rating-report download manifest with PDF hashes" /></a></td></tr></table>
+</details>
 
-[Redacted sample](https://github.com/zc627788/caipanbook_Crawler/blob/main/docs/portfolio/project-evidence/redacted-preview.csv) · [Results screenshot](https://github.com/zc627788/caipanbook_Crawler/blob/main/docs/portfolio/project-evidence/audit.png) · [中文说明](https://github.com/zc627788/caipanbook_Crawler/blob/main/README.zh-CN.md)
+### 03 / OPC — business portal & admin
 
-<a href="https://github.com/zc627788/bond_and_money_scrapy"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/bond.png" width="100%" alt="Rating report collector: 15 downloaded PDFs, 10 unique files and 182 unique-file pages" /></a>
+**Next.js portal · React admin · FastAPI backend**
 
-**[Rating report collector →](https://github.com/zc627788/bond_and_money_scrapy)**<br>
-Search by issuer, download PDFs, flag duplicate files and hand over an Excel inventory with source links. A live ChinaBond sample returned **15 PDFs: 10 unique files, 182 pages** after deduplication. The run covered one issuer and its first listing page.
+A business system for content, applications, review records and product management. The screenshot below is the actual React admin connected to the project’s authentication and product routes.
 
-[Collection manifest](https://github.com/zc627788/bond_and_money_scrapy/blob/main/docs/portfolio/live-evidence/manifest.csv) · [Results screenshot](https://github.com/zc627788/bond_and_money_scrapy/blob/main/docs/portfolio/live-evidence/screenshot.png) · [中文说明](https://github.com/zc627788/bond_and_money_scrapy/blob/main/README.zh-CN.md)
+<a href="https://github.com/zc627788/poc_system"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/opc-demo.png" width="100%" alt="Actual OPC admin screenshot showing four saved fictional demo products" /></a>
 
-<a href="https://github.com/zc627788/poc_system"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/opc.png" width="100%" alt="OPC business portal: Next.js public site, React admin and FastAPI backend" /></a>
+**Verified demo:** sign in → create a product → reload → confirm it was saved.<br>
+<sub>Isolated SQLite database, fictional products. Public payments use a mock adapter; external integrations are outside this demo.</sub>
 
-**[OPC business portal →](https://github.com/zc627788/poc_system)**<br>
-A public portal and admin system with content, applications, review records and product management. The local product demo uses the original React UI and API routes: **sign in, create a product, reload and confirm it was saved**. It uses an isolated SQLite database and fictional products.
+[Explore the project ↗](https://github.com/zc627788/poc_system) &nbsp; · &nbsp; [Run the demo](https://github.com/zc627788/poc_system#run-the-product-management-demo)
 
-[Admin screenshot](https://github.com/zc627788/poc_system/blob/main/docs/portfolio/products-live.png) · [Run the demo](https://github.com/zc627788/poc_system#run-the-product-management-demo) · [中文说明](https://github.com/zc627788/poc_system/blob/main/README.zh-CN.md)
+---
 
 ## Working together
 
-I'm open to **remote, part-time projects**, with around **24 hours a week** available. Good starting points are a scraper that needs fixing, a document-to-spreadsheet workflow, an API integration, or a defined React/admin feature.
+Open to **remote, part-time work · around 24 hours/week**. A good first project might be a broken scraper, a document-to-spreadsheet workflow, an API integration, or a defined React/admin feature.
 
-Send the source URL or current workflow, the result you need, and any deadline. I prefer to agree on a small sample or a first milestone, then build from there. Written requirements, progress notes and clear handover documentation work well for me.
+Send the source or current workflow, the result you need, and your deadline. I like to start with a small sample or milestone, share progress in writing, and leave clear instructions with the handover.
 
-**[Find me on Upwork](https://www.upwork.com/freelancers/~01ea3bc7d239147efd) · [电鸭主页](https://eleduck.com/users/87hD4V)**
+**[Upwork](https://www.upwork.com/freelancers/~01ea3bc7d239147efd)** &nbsp; / &nbsp; **[电鸭](https://eleduck.com/users/87hD4V)**
 
-<sub>Selected project results were checked in October 2026. Each repository explains the tested scope, sample data and remaining limitations.</sub>
+<sub>Project evidence checked in October 2026. The animation above illustrates a workflow; it is not a live activity feed. All visual assets are stored in this repository.</sub>

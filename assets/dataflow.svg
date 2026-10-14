@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+<title id="title">Jackson — from scattered data to useful software</title>
+<desc id="desc">An animated illustration of sources flowing through Python processing into structured data and applications. Conceptual workflow, not a live system monitor.</desc>
+<defs>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#a8f0ce" stroke-opacity=".045"/></pattern>
+ <radialGradient id="halo"><stop stop-color="#143e3b"/><stop offset="1" stop-color="#0b1522"/></radialGradient>
+ <linearGradient id="edge"><stop stop-color="#a8f0ce"/><stop offset="1" stop-color="#87bfff"/></linearGradient>
+</defs>
+<style>
+ text{font-family:Segoe UI,Arial,sans-serif}.mono{font-family:Consolas,monospace}.muted{fill:#9aafc2}.packet{animation:travel 5s linear infinite;stroke-dasharray:9 650;stroke-dashoffset:659}.p2{animation-delay:-1.6s}.p3{animation-delay:-3.3s}.pulse{animation:breathe 3s ease-in-out infinite}.cursor{animation:blink 1.6s step-end infinite}
+ @keyframes travel{to{stroke-dashoffset:0}}@keyframes breathe{50%{opacity:.35}}@keyframes blink{50%{opacity:0}}
+ @media(prefers-reduced-motion:reduce){.packet,.pulse,.cursor{animation:none}}
+</style>
+<rect x="1" y="1" width="1198" height="598" rx="24" fill="#0b1522" stroke="#26374a"/>
+<rect x="2" y="2" width="1196" height="596" rx="24" fill="url(#grid)"/>
+<ellipse cx="955" cy="180" rx="220" ry="160" fill="url(#halo)"/>
+<path d="M48 48H88" stroke="url(#edge)" stroke-width="3"/>
+<text x="104" y="54" fill="#a8f0ce" font-size="16" letter-spacing="3" class="mono">JACKSON / SOFTWARE ENGINEER</text>
+<circle cx="932" cy="48" r="4" fill="#a8f0ce" class="pulse"/>
+<text x="946" y="53" class="mono muted" font-size="13">REMOTE · PART-TIME</text>
+<text x="48" y="142" fill="#f1f6fb" font-size="58" font-weight="700" letter-spacing="-2">From scattered data</text>
+<text x="48" y="212" fill="#a8f0ce" font-size="58" font-weight="700" letter-spacing="-2">to useful software.</text>
+<text x="50" y="258" class="muted" font-size="20">Python automation. React applications. Built through to delivery.</text>
+<g transform="translate(985 158)" fill="none" stroke="#8bb8bd">
+ <circle r="69" stroke-opacity=".15"/><circle r="49" stroke-opacity=".35"/>
+ <path d="M-23-17L-40 0L-23 17M23-17L40 0L23 17M10-29L-10 29" stroke="#a8f0ce" stroke-width="3"/>
+ <circle cx="0" cy="-69" r="4" fill="#a8f0ce" stroke="none" class="pulse"/>
+</g>
+<path d="M48 300H1152" stroke="#233447"/>
+<text x="48" y="335" class="mono muted" font-size="12" letter-spacing="2">HOW I CONNECT THE PIECES</text>
+<g fill="none" stroke="#294558" stroke-width="2">
+ <path d="M254 420H345M565 420H655M875 420H955"/>
+</g>
+<g fill="none" stroke="#a8f0ce" stroke-width="3" stroke-linecap="round">
+ <path d="M254 420H345M565 420H655M875 420H955" class="packet"/>
+ <path d="M254 420H345M565 420H655M875 420H955" class="packet p2"/>
+</g>
+<g>
+ <rect x="48" y="366" width="206" height="108" rx="12" fill="#101f30" stroke="#2a4054"/>
+ <text x="68" y="393" class="mono muted" font-size="12">01 / COLLECT</text>
+ <text x="68" y="425" fill="#edf5fc" font-size="23" font-weight="600">Web · API · PDF</text>
+ <text x="68" y="450" class="muted" font-size="14">Find the right source</text>
+ <rect x="345" y="366" width="220" height="108" rx="12" fill="#102b2e" stroke="#548b80"/>
+ <text x="365" y="393" class="mono" fill="#a8f0ce" font-size="12">02 / PROCESS</text>
+ <text x="365" y="425" fill="#edf5fc" font-size="23" font-weight="600">Python pipeline</text>
+ <text x="365" y="450" class="muted" font-size="14">Parse · validate · export</text>
+ <rect x="655" y="366" width="220" height="108" rx="12" fill="#101f30" stroke="#2a4054"/>
+ <text x="675" y="393" class="mono muted" font-size="12">03 / STRUCTURE</text>
+ <text x="675" y="425" fill="#edf5fc" font-size="23" font-weight="600">Clean, usable data</text>
+ <text x="675" y="450" class="muted" font-size="14">CSV · Excel · SQL</text>
+ <rect x="955" y="366" width="197" height="108" rx="12" fill="#132337" stroke="#436080"/>
+ <text x="975" y="393" class="mono" fill="#a7c7ff" font-size="12">04 / DELIVER</text>
+ <text x="975" y="425" fill="#edf5fc" font-size="23" font-weight="600">Useful tools</text>
+ <text x="975" y="450" class="muted" font-size="14">React · FastAPI</text>
+</g>
+<text x="48" y="536" class="mono" fill="#a8f0ce" font-size="15">&gt; build something people can actually use</text>
+<rect x="443" y="521" width="8" height="18" fill="#a8f0ce" class="cursor"/>
+<text x="48" y="570" class="mono muted" font-size="11">WORKFLOW ILLUSTRATION</text>
+<text x="1152" y="570" text-anchor="end" class="mono muted" font-size="11">zc627788 / SELECTED WORK BELOW</text>
+</svg>

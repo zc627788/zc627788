@@ -1,55 +1,25 @@
-<img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/orbit-header.svg" width="100%" alt="Jackson — Data in. Clarity out. Animated orbital workflow illustration." />
+<img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/orbit-header.svg?v=97bc57c01e3d" width="100%" alt="Jackson — Data in. Clarity out. Python automation and React applications." />
 
-<p align="center"><a href="#selected-work">WORK</a> &nbsp; · &nbsp; <a href="#working-together">CONTACT</a> &nbsp; · &nbsp; <a href="README.zh-CN.md">中文</a></p>
+<img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/intro-panel.svg?v=76b1b7c21034" width="100%" alt="I build Python extraction tools, document workflows and React business applications, from frontend through API, database and deployment." />
 
-I’m **Jackson**. I build Python tools that collect and organize data, and React applications that put it to work. My projects cover web protocol analysis, document workflows, customer-information systems and business dashboards. I handle the frontend, API, database and deployment for scoped web projects.
+<img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/stack-strip.svg?v=c232914cedf9" width="100%" alt="Python · React · TypeScript · Next.js · FastAPI · SQL" />
 
-<img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/stack-strip.svg" width="100%" alt="Python / React / TypeScript / Next.js / FastAPI / SQL" />
+<a href="https://github.com/zc627788/caipanbook_Crawler"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/project-court.svg?v=829b0704662a" width="100%" alt="Court document collection: 7,296 distinct saved IDs, a 12-column export, 955 records recovered. Historical output audit; no new live crawl tested." /></a>
 
-## Selected work
+<a href="https://github.com/zc627788/caipanbook_Crawler/blob/main/docs/portfolio/project-evidence/redacted-preview.csv"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/link-court.svg?v=c8b467452535" width="100%" alt="Open the redacted sample" /></a>
 
-<a href="https://github.com/zc627788/caipanbook_Crawler"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/project-court.svg" width="100%" alt="Court document collection — 7,296 distinct IDs in verified saved output" /></a>
+<a href="https://github.com/zc627788/bond_and_money_scrapy"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/project-reports.svg?v=561d84372249" width="100%" alt="Rating report pipeline: 15 downloaded PDFs, 10 unique files, 182 pages. One issuer and its first listing page." /></a>
 
-An existing collector with partitioned tasks and saved checkpoints. Re-exporting the local output recovered **955 records** missing from the older CSV. The result is a **7,296-row, 12-column export**; this check used saved data, not a new live crawl.
+<a href="https://github.com/zc627788/bond_and_money_scrapy/blob/main/docs/portfolio/live-evidence/manifest.csv"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/link-reports.svg?v=ddff3aa18e46" width="100%" alt="Inspect the download manifest" /></a>
 
-[Explore the code ↗](https://github.com/zc627788/caipanbook_Crawler) &nbsp; · &nbsp; [Read the redacted sample](https://github.com/zc627788/caipanbook_Crawler/blob/main/docs/portfolio/project-evidence/redacted-preview.csv)
+<a href="https://github.com/zc627788/poc_system"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/project-opc.svg?v=fdeaf10b6483" width="100%" alt="OPC: Next.js portal, React admin, FastAPI backend. Verified product demo uses SQLite and fictional products; payments mocked, integrations untested." /></a>
 
-<details>
-<summary>Output evidence · record counts and redacted preview</summary>
-<p><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/court-evidence.png" width="100%" alt="Audit report of actual court-document output, with sensitive fields removed" /></p>
-</details>
+<a href="https://github.com/zc627788/poc_system/blob/main/docs/portfolio/products-live.png"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/link-opc.svg?v=d1747a0e1f80" width="100%" alt="Open the original local demo screenshot" /></a>
 
-<br>
+<img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/contact-panel.svg?v=5d46687809f2" width="100%" alt="Remote part-time projects, approximately 24 hours/week. Scoped milestones, written progress updates and clear handover." />
 
-<a href="https://github.com/zc627788/bond_and_money_scrapy"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/project-reports.svg" width="100%" alt="Rating report pipeline — 15 downloaded PDFs, 10 unique files, 182 pages" /></a>
+<p align="center"><a href="https://www.upwork.com/freelancers/~01ea3bc7d239147efd"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/link-upwork.svg?v=783d4e906a0e" width="32%" alt="Contact on Upwork" /></a>
+<a href="https://eleduck.com/users/87hD4V"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/link-eleduck.svg?v=f5691c7f1385" width="32%" alt="Contact on Eleduck" /></a>
+<a href="README.zh-CN.md"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/link-text.svg?v=b240d1f10e77" width="32%" alt="Read the Chinese and accessible text edition" /></a></p>
 
-Search by issuer, download the reports, flag duplicate files and deliver an Excel inventory with source links. A live ChinaBond sample produced **15 PDFs → 10 unique files → 182 pages**. It covered one issuer and its first listing page.
-
-[Explore the code ↗](https://github.com/zc627788/bond_and_money_scrapy) &nbsp; · &nbsp; [Inspect the download manifest](https://github.com/zc627788/bond_and_money_scrapy/blob/main/docs/portfolio/live-evidence/manifest.csv)
-
-<details>
-<summary>Output evidence · downloaded reports and file hashes</summary>
-<p><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/reports-evidence.png" width="100%" alt="Audit report of actual downloaded rating reports and their hashes" /></p>
-</details>
-
-<br>
-
-<a href="https://github.com/zc627788/poc_system"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/project-opc.svg" width="100%" alt="OPC — Next.js portal, React admin and FastAPI product-management demo" /></a>
-
-A business portal and admin system for content, applications, reviews and products. The product demo runs the original React UI and API routes: **sign in → create → reload → confirm the saved record**.
-
-<a href="https://github.com/zc627788/poc_system"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/opc-demo.png" width="100%" alt="Actual OPC admin showing four saved fictional demo products" /></a>
-
-<sub>Actual local demo screenshot. Isolated SQLite database and fictional products. Public payments use a mock adapter; external integrations were not exercised.</sub>
-
-[Explore the code ↗](https://github.com/zc627788/poc_system) &nbsp; · &nbsp; [Run the product demo](https://github.com/zc627788/poc_system#run-the-product-management-demo)
-
-## Working together
-
-<a href="https://www.upwork.com/freelancers/~01ea3bc7d239147efd"><img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/contact-panel.svg" width="100%" alt="Remote part-time projects, around 24 hours per week" /></a>
-
-A good starting point: fix a scraper, turn documents into a clean spreadsheet, connect an API, or finish a defined React/admin feature. Send the current workflow, the result you need and your deadline. I prefer a small first milestone, written progress updates and clear handover notes.
-
-**[Upwork ↗](https://www.upwork.com/freelancers/~01ea3bc7d239147efd)** &nbsp; / &nbsp; **[电鸭 ↗](https://eleduck.com/users/87hD4V)**
-
-<sub>Project evidence checked in October 2026. Orbital animation and project illustrations are conceptual; screenshots show actual outputs. Visual assets are served from this repository.</sub>
+<img src="https://raw.githubusercontent.com/zc627788/zc627788/main/assets/colophon.svg?v=ed3fe43f3a15" width="100%" alt="Evidence checked October 2026. Animations illustrate the workflow; embedded screenshots show actual output. Space Grotesk and Manrope are licensed under SIL OFL." />

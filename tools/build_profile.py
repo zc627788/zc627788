@@ -13,6 +13,7 @@ import xml.etree.ElementTree as ET
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 from fontTools.pens.svgPathPen import SVGPathPen
+import observatory
 
 ROOT = Path(__file__).resolve().parents[1]
 A = ROOT / 'assets'
@@ -86,19 +87,16 @@ def save(name, content):
 
 def panel(name,h,title,body):
     save(name,f'''<svg xmlns="{NS}" width="1200" height="{h}" viewBox="0 0 1200 {h}" role="img" aria-labelledby="title"><title id="title">{escape(title)}</title>
-    <defs><linearGradient id="wash" x2="1" y2="1"><stop stop-color="#122424"/><stop offset="1" stop-color="#080d13"/></linearGradient>
+    <defs><linearGradient id="wash" x2="1" y2="1"><stop stop-color="#30264f"/><stop offset="1" stop-color="#080d13"/></linearGradient>
     <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#93bfae" stroke-opacity=".035"/></pattern></defs>
     <style>{STYLE}</style><rect width="1200" height="{h}" rx="18" fill="#080d13"/><rect width="1200" height="{h}" rx="18" fill="url(#grid)"/>
-    {body}<path d="M44 {h-2}H1156" stroke="#28403d"/><path d="M44 {h-2}H1156" stroke="#a9ddc8" stroke-opacity=".55" class="trace"/></svg>''')
+    {observatory.backdrop(h) if h>200 else ''}{body}<path d="M44 {h-2}H1156" stroke="#373450"/><path d="M44 {h-2}H1156" stroke="#b1a1ff" stroke-opacity=".7" class="trace"/></svg>''')
 
 # The eclipse echoes the existing profile avatar; its animation is conceptual.
-hero=(ROOT/'tools/sources/orbit-header.svg').read_text(encoding='utf-8')
-hero=hero.replace('font-size="100"','font-size="96"').replace('letter-spacing="-5"','letter-spacing="-4"')
-hero=hero.replace('stroke="url(#trail)"','stroke="#a9f3d6"')
-save('orbit-header.svg',hero)
+save('orbit-header.svg',observatory.hero(txt))
 
 panel('intro-panel.svg',260,'Python automation and full-stack delivery. Jackson builds web extraction tools, document workflows and React applications.',
-      txt(44,46,'THE WORK / FROM A MESSY INPUT TO A USEFUL PRODUCT',15,'#cbb38f','SpaceGrotesk',letter_spacing=1)+
+      txt(44,46,'THE MISSION / TURN COMPLEXITY INTO SOMETHING USEFUL',15,'#b9a7ed','SpaceGrotesk',letter_spacing=1)+
       txt(44,104,'Less manual work. More useful software.',42,'#edf2e9','SpaceGrotesk')+
       txt(44,154,'I build Python tools that collect and organize data, then React applications that put it to work.',21)+
       txt(44,190,'Web extraction, document workflows and business systems — from API to screen.',21)+
@@ -107,19 +105,20 @@ panel('intro-panel.svg',260,'Python automation and full-stack delivery. Jackson 
 
 stack=''
 for i,(label,x) in enumerate([('PYTHON',44),('REACT',240),('TYPESCRIPT',420),('NEXT.JS',680),('FASTAPI',880),('SQL',1090)]):
-    stack+=txt(x,62,label,20,'#c1d5cb','SpaceGrotesk')
-    stack+=f'<circle cx="{x+3}" cy="28" r="2.6" fill="#b9ecd3" class="pulse" style="animation-delay:-{i*.6}s"/>'
-panel('stack-strip.svg',98,'Python, React, TypeScript, Next.js, FastAPI, SQL',stack)
+    stack+=txt(x,113,label,20,'#c1d5cb','SpaceGrotesk')
+    stack+=f'<g class="drift" style="animation-delay:-{i}s"><path d="M{x+16} 26l27 15v29l-27 15-27-15V41Z" fill="#172139" stroke="#8a89cf"/><path d="M{x+16} 26v59m-27-44 54 29m0-29-54 29" stroke="#8cd8c9" stroke-opacity=".65"/><circle cx="{x+16}" cy="55" r="4" fill="#b9ecd3" class="pulse" style="animation-delay:-{i*.6}s"/></g>'
+panel('stack-strip.svg',145,'Python, React, TypeScript, Next.js, FastAPI, SQL',stack)
 
 def project(name,no,category,title,sub,metric,metric_label,lines,screenshot,proof):
     png=base64.b64encode((A/screenshot).read_bytes()).decode()
-    body=txt(44,47,category,15,'#cbb38f','SpaceGrotesk',letter_spacing=2)
+    body=observatory.motif('court' if 'court' in name else 'reports' if 'reports' in name else 'opc')
+    body+=txt(44,47,category,15,'#b9a7ed','SpaceGrotesk',letter_spacing=2)
     body+=txt(1156,47,no,15,'#b6cfc2','SpaceGrotesk',text_anchor='end')
     body+=txt(44,119,title,45,'#edf2e9','SpaceGrotesk')+txt(44,162,sub,21)
     body+=txt(44,250,metric,66,'#b8ebd1','SpaceGrotesk')+txt(44,289,metric_label,20)
     for i,line in enumerate(lines): body+=txt(44,361+i*36,line,21)
     body+='<path d="M620 330v180" stroke="#2d4540"/><path d="M620 330v180" stroke="#c8e7d4" class="trace"/>'
-    body+='<rect x="672" y="215" width="484" height="310" rx="11" fill="#101c21" stroke="#39554d"/>'
+    body+='<rect x="667" y="210" width="494" height="320" rx="14" fill="none" stroke="#8b7bbb" stroke-opacity=".25" class="pulse"/><rect x="672" y="215" width="484" height="310" rx="11" fill="#101c21" stroke="#776696"/>'
     body+=txt(690,243,'ACTUAL OUTPUT / PROJECT EVIDENCE',12,'#c3d8cc','SpaceGrotesk',letter_spacing=1)
     body+='<circle cx="1137" cy="238" r="3" fill="#c8af89" class="pulse"/>'
     body+=f'<image x="686" y="258" width="456" height="252" preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,{png}"/>'
@@ -143,14 +142,14 @@ project('project-opc.svg','03 / 03','FULL-STACK APPLICATION','OPC business porta
 
 panel('contact-panel.svg',330,'Open to scoped remote, part-time projects, around 24 hours per week. Written updates and clear handover. Contact Jackson on Upwork or Eleduck.',
       '<ellipse cx="1110" cy="170" rx="220" ry="160" fill="url(#wash)"/>'+
-      txt(44,49,'NEXT / BUILD SOMETHING USEFUL',15,'#cbb38f','SpaceGrotesk',letter_spacing=2)+
+      txt(44,49,'NEXT TRANSMISSION / YOUR PROJECT',15,'#b9a7ed','SpaceGrotesk',letter_spacing=2)+
       txt(44,117,'Have a workflow that needs fixing?',45,'#edf2e9','SpaceGrotesk')+
       txt(44,169,'A scraper repair. A document pipeline. A defined React or admin feature.',22)+
       txt(44,207,'Send the current workflow, the result you need and your deadline.',22)+
       txt(44,245,'Small first milestone. Written updates. Clear handover notes.',22)+
       '<circle cx="49" cy="294" r="4" fill="#b9ecd3" class="pulse"/>'+
       txt(64,300,'REMOTE / PART-TIME / ~24 HOURS A WEEK',15,'#bdd9c9','SpaceGrotesk')+
-      '<path d="M970 282h145m-18-18 18 18-18 18" stroke="#cbb38f" stroke-width="2" fill="none" class="scan"/>')
+      '<g fill="none" stroke="#b4a0eb" stroke-opacity=".7" class="pulse"><circle cx="1080" cy="255" r="35"/><circle cx="1080" cy="255" r="55"/><circle cx="1080" cy="255" r="75"/></g><path d="M970 282h145m-18-18 18 18-18 18" stroke="#a6f5df" stroke-width="2" fill="none" class="scan"/>')
 
 def button(file,label):
     panel(file,90,label,txt(44,53,label,22,'#cbded2','SpaceGrotesk')+

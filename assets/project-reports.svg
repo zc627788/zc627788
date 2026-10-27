@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title"><title id="title">Rating report pipeline. 15 → 10 downloaded PDFs → unique files. Download reports and retain their source links. Flag identical files with SHA-256 hashes. Deliver an Excel inventory for review. Live sample: one issuer, first listing page. LIVE SAMPLE / 182 PAGES ACROSS THE UNIQUE FILES</title>
     <defs><linearGradient id="wash" x2="1" y2="1"><stop stop-color="#30264f" /><stop offset="1" stop-color="#080d13" /></linearGradient>
+    <linearGradient id="ribbon"><stop stop-color="#7d62eb" /><stop offset=".5" stop-color="#9ae6e4" /><stop offset="1" stop-color="#9d77e0" /></linearGradient>
     <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#93bfae" stroke-opacity=".035" /></pattern></defs>
     <style>
 .drift{animation:drift 7s ease-in-out infinite}.pulse{animation:pulse 4s ease-in-out infinite}
@@ -12,6 +13,7 @@
 @keyframes scan{50%{transform:translateX(80px);opacity:.25}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}}
 </style><rect width="1200" height="610" rx="18" fill="#080d13" /><rect width="1200" height="610" rx="18" fill="url(#grid)" />
+    <g fill="none" stroke="url(#ribbon)" stroke-opacity=".09" class="drift slow"><path d="M760 0Q1120 170.8 1200 384.3" /><path d="M782 0Q1129 170.8 1200 390.3" /><path d="M804 0Q1138 170.8 1200 396.3" /><path d="M826 0Q1147 170.8 1200 402.3" /><path d="M848 0Q1156 170.8 1200 408.3" /><path d="M870 0Q1165 170.8 1200 414.3" /><path d="M892 0Q1174 170.8 1200 420.3" /><path d="M914 0Q1183 170.8 1200 426.3" /><path d="M936 0Q1192 170.8 1200 432.3" /><path d="M958 0Q1201 170.8 1200 438.3" /><path d="M980 0Q1210 170.8 1200 444.3" /><path d="M1002 0Q1219 170.8 1200 450.3" /></g>
     <path d="M14 85V24h110M1186 525v61h-110" fill="none" stroke="#7f7ac7" stroke-opacity=".65" />
     <path d="M14 100V510M1186 100V510" stroke="#364b63" stroke-opacity=".55" />
     <path d="M14 100V510M1186 100V510" stroke="#94baf9" class="trace" />

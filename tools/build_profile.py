@@ -14,6 +14,7 @@ from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 from fontTools.pens.svgPathPen import SVGPathPen
 import observatory
+import hyperspace
 
 ROOT = Path(__file__).resolve().parents[1]
 A = ROOT / 'assets'
@@ -88,12 +89,13 @@ def save(name, content):
 def panel(name,h,title,body):
     save(name,f'''<svg xmlns="{NS}" width="1200" height="{h}" viewBox="0 0 1200 {h}" role="img" aria-labelledby="title"><title id="title">{escape(title)}</title>
     <defs><linearGradient id="wash" x2="1" y2="1"><stop stop-color="#30264f"/><stop offset="1" stop-color="#080d13"/></linearGradient>
+    <linearGradient id="ribbon"><stop stop-color="#7d62eb"/><stop offset=".5" stop-color="#9ae6e4"/><stop offset="1" stop-color="#9d77e0"/></linearGradient>
     <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#93bfae" stroke-opacity=".035"/></pattern></defs>
     <style>{STYLE}</style><rect width="1200" height="{h}" rx="18" fill="#080d13"/><rect width="1200" height="{h}" rx="18" fill="url(#grid)"/>
     {observatory.backdrop(h) if h>200 else ''}{body}<path d="M44 {h-2}H1156" stroke="#373450"/><path d="M44 {h-2}H1156" stroke="#b1a1ff" stroke-opacity=".7" class="trace"/></svg>''')
 
 # The eclipse echoes the existing profile avatar; its animation is conceptual.
-save('orbit-header.svg',observatory.hero(txt))
+save('orbit-header.svg',hyperspace.hero(txt))
 
 panel('intro-panel.svg',260,'Python automation and full-stack delivery. Jackson builds web extraction tools, document workflows and React applications.',
       txt(44,46,'THE MISSION / TURN COMPLEXITY INTO SOMETHING USEFUL',15,'#b9a7ed','SpaceGrotesk',letter_spacing=1)+
@@ -108,6 +110,7 @@ for i,(label,x) in enumerate([('PYTHON',44),('REACT',240),('TYPESCRIPT',420),('N
     stack+=txt(x,113,label,20,'#c1d5cb','SpaceGrotesk')
     stack+=f'<g class="drift" style="animation-delay:-{i}s"><path d="M{x+16} 26l27 15v29l-27 15-27-15V41Z" fill="#172139" stroke="#8a89cf"/><path d="M{x+16} 26v59m-27-44 54 29m0-29-54 29" stroke="#8cd8c9" stroke-opacity=".65"/><circle cx="{x+16}" cy="55" r="4" fill="#b9ecd3" class="pulse" style="animation-delay:-{i*.6}s"/></g>'
 panel('stack-strip.svg',145,'Python, React, TypeScript, Next.js, FastAPI, SQL',stack)
+panel('work-transition.svg',145,'Selected work. Real evidence.',hyperspace.transit(txt))
 
 def project(name,no,category,title,sub,metric,metric_label,lines,screenshot,proof):
     png=base64.b64encode((A/screenshot).read_bytes()).decode()
@@ -173,9 +176,10 @@ def image(name,alt,link=None,width='100%'):
     tag=f'<img src="{BASE+name}?v={revision}" width="{width}" alt="{escape(alt,quote=True)}" />'
     return f'<a href="{link}">{tag}</a>' if link else tag
 
-blocks=[image('orbit-header.svg','Jackson — Data in. Clarity out. Python automation and React applications.'),
+blocks=[image('orbit-header.svg','Jackson — Beyond the interface. Animated four-dimensional data sculpture. Python automation and React applications.'),
         image('intro-panel.svg','I build Python extraction tools, document workflows and React business applications, from frontend through API, database and deployment.'),
-        image('stack-strip.svg','Python · React · TypeScript · Next.js · FastAPI · SQL')]
+        image('stack-strip.svg','Python · React · TypeScript · Next.js · FastAPI · SQL'),
+        image('work-transition.svg','Selected work / real evidence')]
 for stem,repo,alt,evidence,linkalt in [
     ('court','caipanbook_Crawler','Court document collection: 7,296 distinct saved IDs, a 12-column export, 955 records recovered. Historical output audit; no new live crawl tested.','docs/portfolio/project-evidence/redacted-preview.csv','Open the redacted sample'),
     ('reports','bond_and_money_scrapy','Rating report pipeline: 15 downloaded PDFs, 10 unique files, 182 pages. One issuer and its first listing page.','docs/portfolio/live-evidence/manifest.csv','Inspect the download manifest'),

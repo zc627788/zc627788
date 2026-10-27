@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="145" viewBox="0 0 1200 145" role="img" aria-labelledby="title"><title id="title">Python, React, TypeScript, Next.js, FastAPI, SQL</title>
     <defs><linearGradient id="wash" x2="1" y2="1"><stop stop-color="#30264f" /><stop offset="1" stop-color="#080d13" /></linearGradient>
+    <linearGradient id="ribbon"><stop stop-color="#7d62eb" /><stop offset=".5" stop-color="#9ae6e4" /><stop offset="1" stop-color="#9d77e0" /></linearGradient>
     <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#93bfae" stroke-opacity=".035" /></pattern></defs>
     <style>
 .drift{animation:drift 7s ease-in-out infinite}.pulse{animation:pulse 4s ease-in-out infinite}

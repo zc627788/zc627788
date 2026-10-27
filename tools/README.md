@@ -9,7 +9,9 @@ python tools/build_profile.py
 
 The generator builds the English profile and its SVG assets. Chinese text stays
 in `README.zh-CN.md`. The current orbital data-station artwork lives in
-`tools/observatory.py`; the earlier hero layout is retained in `tools/sources`.
+`tools/hyperspace.py` (a projected 4D sculpture with a seamless CSS path animation).
+Panel machinery and the previous orbital hero live in `tools/observatory.py`;
+the earlier hero layout is retained in `tools/sources`.
 
 Space Grotesk and Manrope are bundled under their SIL Open Font Licenses in
 `assets/fonts`. Text is outlined to preserve typography in GitHub image rendering;

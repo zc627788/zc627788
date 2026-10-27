@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title"><title id="title">Python automation and full-stack delivery. Jackson builds web extraction tools, document workflows and React applications.</title>
     <defs><linearGradient id="wash" x2="1" y2="1"><stop stop-color="#30264f" /><stop offset="1" stop-color="#080d13" /></linearGradient>
+    <linearGradient id="ribbon"><stop stop-color="#7d62eb" /><stop offset=".5" stop-color="#9ae6e4" /><stop offset="1" stop-color="#9d77e0" /></linearGradient>
     <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#93bfae" stroke-opacity=".035" /></pattern></defs>
     <style>
 .drift{animation:drift 7s ease-in-out infinite}.pulse{animation:pulse 4s ease-in-out infinite}
@@ -12,6 +13,7 @@
 @keyframes scan{50%{transform:translateX(80px);opacity:.25}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}}
 </style><rect width="1200" height="260" rx="18" fill="#080d13" /><rect width="1200" height="260" rx="18" fill="url(#grid)" />
+    <g fill="none" stroke="url(#ribbon)" stroke-opacity=".09" class="drift slow"><path d="M760 0Q1120 72.80000000000001 1200 163.8" /><path d="M782 0Q1129 72.80000000000001 1200 169.8" /><path d="M804 0Q1138 72.80000000000001 1200 175.8" /><path d="M826 0Q1147 72.80000000000001 1200 181.8" /><path d="M848 0Q1156 72.80000000000001 1200 187.8" /><path d="M870 0Q1165 72.80000000000001 1200 193.8" /><path d="M892 0Q1174 72.80000000000001 1200 199.8" /><path d="M914 0Q1183 72.80000000000001 1200 205.8" /><path d="M936 0Q1192 72.80000000000001 1200 211.8" /><path d="M958 0Q1201 72.80000000000001 1200 217.8" /><path d="M980 0Q1210 72.80000000000001 1200 223.8" /><path d="M1002 0Q1219 72.80000000000001 1200 229.8" /></g>
     <path d="M14 85V24h110M1186 175v61h-110" fill="none" stroke="#7f7ac7" stroke-opacity=".65" />
     <path d="M14 100V160M1186 100V160" stroke="#364b63" stroke-opacity=".55" />
     <path d="M14 100V160M1186 100V160" stroke="#94baf9" class="trace" />

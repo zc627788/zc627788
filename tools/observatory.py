@@ -96,7 +96,9 @@ def motif(kind):
 
 def backdrop(h):
     # Sparse luminous edge work avoids passing animation over readable copy.
-    return f'''<path d="M14 85V24h110M1186 {h-85}v61h-110" fill="none" stroke="#7f7ac7" stroke-opacity=".65"/>
+    waves=''.join(f'<path d="M{760+i*22} 0Q{1120+i*9} {h*.28} 1200 {h*.63+i*6}"/>' for i in range(12))
+    return f'''<g fill="none" stroke="url(#ribbon)" stroke-opacity=".09" class="drift slow">{waves}</g>
+    <path d="M14 85V24h110M1186 {h-85}v61h-110" fill="none" stroke="#7f7ac7" stroke-opacity=".65"/>
     <path d="M14 100V{h-100}M1186 100V{h-100}" stroke="#364b63" stroke-opacity=".55"/>
     <path d="M14 100V{h-100}M1186 100V{h-100}" stroke="#94baf9" class="trace"/>
     <circle cx="1153" cy="24" r="2" fill="#9ce7d1" class="pulse"/>
